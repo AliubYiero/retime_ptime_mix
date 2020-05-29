@@ -4,7 +4,7 @@
 3.每个字逐渐出现，出现间隔有一套判断逻辑，规定了行的出现时间不会太长	-->[6]
 4.pre_time为开始提前时间，可选择填写，默认提前200ms
 5.post_time决定retime的结束时间，有两个模式
-	a.不填post_time，为开场retime效果，每行会持续dur_time的时间，下一行的开始时间接着上一行的结束时间
+	a.不填post_time，为进场效果，每行会持续dur_time的时间，下一行的开始时间接着上一行的结束时间
 	b.填retime，为行retime效果，每行结束在(line.end_time+post_time)，也就是正常的"line"模式的结束
 6.judge_duration是一个范围规定，可选择填写，默认规定500ms
 	a.如果(dur_time*line.kara.n <= judge_duration)即整行从第一个字出现到最后一个字结束的时间小于等于judge_duration，则行的出现间隔为dur_time
